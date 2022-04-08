@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattparker124/portfolio-generator.git"
+  },
+  "keywords": [],
+  "author": "mattparker124",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattparker124/portfolio-generator/issues"
+  },
+  "homepage": "https://github.com/mattparker124/portfolio-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
+}
