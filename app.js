@@ -6,11 +6,29 @@ const promptUser = () => {
             type: 'input',
             name: 'name',
             message: 'What is your name?',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                }
+                else {
+                    console.log('Please enter your name!');
+                    return false;
+                }
+            },
         },
         {
             type: 'input',
             name: 'github',
             message: 'Enter your GitHub Username',
+            validate: githubInput => {
+                if (githubInput) {
+                    return true;
+                }
+                else {
+                    console.log('Please enter your GitHub Username!');
+                    return false;
+                }
+            },
         },
         {
             type: 'input',
@@ -34,6 +52,15 @@ const promptProject = portfolioData => {
             type: 'input',
             name: 'name',
             message: 'What is the name of your project?',
+            validate: projectInput => {
+                if (projectInput) {
+                    return true;
+                }
+                else {
+                    console.log('Please enter your project name!');
+                    return false;
+                }
+            },
         },
         {
             type: 'input',
@@ -49,7 +76,16 @@ const promptProject = portfolioData => {
         {
             type: 'input',
             name: 'link',
-            message: 'Enter the GitHub link to your project. (Required',
+            message: 'Enter the GitHub link to your project. (Required)',
+            validate: projectLinkInput => {
+                if (projectLinkInput) {
+                    return true;
+                }
+                else {
+                    console.log('Please enter your project GitHub link!');
+                    return false;
+                }
+            },
         },
         {
             type: 'confirm',
